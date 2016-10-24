@@ -14,6 +14,7 @@
   4. Definitions, terms
   5. References
   6. Overview
+  
 ### 2. Current System
   1. Description of existing project
   PySAL is an open source library of spatial analysis functions written in Python intended to support the development of high level applications. PySAL is open source under the BSD License. [Pysal Link](http://pysal.readthedocs.io/en/latest/index.html)
@@ -21,6 +22,7 @@
   2. How does the project extend existing work
   The project extends the functionality inherent within Pysal into the QGis platform. This allows for functions not found within QGis, but found within Pysal, to be used in Qgis' graphical interface.
   3. What tasks does the new system support
+  
 ### 3. System Proposal
        1. Overview
        2. Functional Requirements
@@ -35,6 +37,7 @@
            6. Interface
            7. Packaging
            8. Licensing
+           
 ### 4. Project Management
         1. Schedule
            1. Detailed milestones for project
