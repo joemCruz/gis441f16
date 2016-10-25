@@ -21,6 +21,9 @@
     * SMC := Spatial Markov chain
   
   5. References
+    * NSF Proposal
+    * "Discover QGIS." Discover QGIS. QGIS, n.d. Web. 25 Oct. 2016. [QGIS](http://www.qgis.org/en/site/about/index.html)
+    * Pysal Developers. "PySAL." PySAL — Python Spatial Analysis Library. Pysal Developers, 2014. Web. 25 Oct. 2016. [Pysal](http://pysal.readthedocs.io/en/latest/index.html)
   6. Overview
   
 ### 2. Current System
@@ -33,7 +36,7 @@
   Spatial methods involving MC exist within the Pysal library. These are inherited from Space-Time 
   The project extends the functionality inherent within Pysal into the QGis platform. This allows for functions not found within QGis, but found within Pysal, to be used in QGis' graphical interface.
   3. What tasks does the new system support
-  
+    * The new system will include the ability to use SMC
   The interoperability between Pysal and QGis will result in the Pysal methods being usable by QGis. This will allow QGis to apply its loaded, spatial files with accompanying data to be analyzed by the methods developed in Pysal.
   
 ### 3. System Proposal
