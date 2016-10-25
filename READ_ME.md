@@ -3,20 +3,22 @@
 
 ### 1. Introduction
   1. Purpose
-    * Pysal contains methods for Markov chains and concordance measures that it inherited from the STARS Package. These methods will be improved and new space-time indicators will be added to the spatial dynamics module of Pysal.
+    * Pysal contains methods for Markov chains and concordance measures that it inherited from the STARS Package. New methods concerning the testing of Spatial Markov chaining, will be created, tested, and added to Pysal.
     * Pysal - QGis Integration intends to allow the integration of certain portions of the Pysal library within the GIS system, QGis.
   2. Scope of your package
   
-  Users of the software Pysal.
-  Users of the software QGis.
+  Users of the software Pysal and/or QGis.
   3. Objectives and success metrics 
-  
-  The update of the spatial dynamics module will be considered successful when
-  Pysal and QGis can be considered successfully integrated when the (elements specified) can be accessed and utilized within QGis with readable and meaningful results. 
+    * The development of Spatial Markov chaining will use the modules already in existence within the Pysal library. It will combine traditional Markov chaining with spatial weighting. This method will then be tested using two methods:
+      1. All permutations across the scope of the data would be calculated. This generates a uniform reference distribution from which a sample can be procured and be applied to a Monte Carlo test to determine the significance of the findings.
+      2. Recently developed goodness-of-fit tests for Markov chaining will be used. These test significant statistics within the transition probability matrix. Again, Monte Carlo sampling can be used to determine significance, or Markov chain Monte Carlo can be used instead.
+    * Spatial Markov chaining will be considered successful whether or not it shows a significant difference between itself and traditional Markov chaining. This is in regards to data that is spatially distributed. 
+    * Pysal and QGis can be considered successfully integrated when the (elements specified) can be accessed and utilized within QGis with readable and meaningful results. 
   4. Definitions, terms
   
-  MC := Markov chain
-  DMC := Discrete Markov chain
+    * MC := Markov chain
+    * DMC := Discrete Markov chain
+    * SMC := Spatial Markov chain
   
   5. References
   6. Overview
@@ -28,7 +30,7 @@
   
   QGIS is a user friendly Open Source Geographic Information System (GIS) licensed under the GNU General Public License. [QGis Link](http://www.qgis.org/en/site/about/index.html)
   2. How does the project extend existing work
-  
+  Spatial methods involving MC exist within the Pysal library. These are inherited from Space-Time 
   The project extends the functionality inherent within Pysal into the QGis platform. This allows for functions not found within QGis, but found within Pysal, to be used in QGis' graphical interface.
   3. What tasks does the new system support
   
