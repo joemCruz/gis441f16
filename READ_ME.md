@@ -12,7 +12,7 @@
     * The development of Spatial Markov chaining will use the modules already in existence within the Pysal library. It will combine traditional Markov chaining with spatial weighting. This method will then be tested using two methods:
       1. All permutations across the scope of the data would be calculated. This generates a uniform reference distribution from which a sample can be procured and be applied to a Monte Carlo test to determine the significance of the findings.
       2. Recently developed goodness-of-fit tests for Markov chaining will be used. These test significant statistics within the transition probability matrix. Again, Monte Carlo sampling can be used to determine significance, or Markov chain Monte Carlo can be used instead.
-    * Spatial Markov chaining will be considered successful whether or not it shows a significant difference between itself and traditional Markov chaining. This is in regards to data that is spatially distributed. 
+    * Spatial Markov chaining will be considered successful when it runs and successfully depicts the spatial relation between objects that have also utilize Markov chaining.. 
     * Pysal and QGIS can be considered successfully integrated when the (elements specified) can be accessed and utilized within QGIS with readable and meaningful results. 
   4. Definitions, terms
   
@@ -43,7 +43,12 @@
 1. Overview
 This system will provide the necessary integration between Pysal and QGIS.
 2. Functional Requirements
-  1. Listing of features to be implemented
+  1. Features to be implemented
+    * All programming will be done in Python.
+    * The modules will be done in Python 2.7 since QGIS does not use Python 3.
+    * SMC will be built within Pysal's spatial-dynamics library.
+    * Existing Markov chain functions and spatial weighting functions will be used to build the new module: Spatial Markov chaining.
+    * 
   2. Mock-ups (sketches) of features
 3. Nonfunctional Requirements
   1. Useability
