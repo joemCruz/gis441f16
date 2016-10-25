@@ -17,7 +17,6 @@
   4. Definitions, terms
   
     * MC := Markov chain
-    * DMC := Discrete Markov chain
     * SMC := Spatial Markov chain
   
   5. References
@@ -48,17 +47,26 @@ This system will provide the necessary integration between Pysal and QGIS.
     * The modules will be done in Python 2.7 since QGIS does not use Python 3.
     * SMC will be built within Pysal's spatial-dynamics library.
     * Existing Markov chain functions and spatial weighting functions will be used to build the new module: Spatial Markov chaining.
-    * 
+    * Pysal - QGIS integration is a module that will be continually modified.
+    * (Elements specified) within Pysal will be given the ability to interact with QGIS.
   2. Mock-ups (sketches) of features
 3. Nonfunctional Requirements
   1. Useability
+    Pysal-QGIS interoperability will be available only on Linux (as of October 24, 2016)
+    SMC will be available through the Pysal library and will function on Linux, Mac, and Windows.
   2. Reliability
   3. Performance
   4. Supportability
   5. Implementation
+    Both modules will be built utilizing Python 2.7
   6. Interface
+    Pysal-QGIS Integration will be handled with QGIS' package handling software.
+    SMC will be available via Python scripter as long as the spatial-dynamics module of pysal has been imported to the working scripter.
   7. Packaging
+    Pysal-QGIS Integration will be an on its own package. It will need to be manually added to QGIS for the time being.
+    SMC will be integrated with the spatial-dynamics module of Pysal.
   8. Licensing
+    BSD
            
 ### 4. Project Management
 1. Schedule
