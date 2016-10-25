@@ -1,5 +1,5 @@
 # Requirements Analysis Document
-# Pysal - QGis Integration
+## Pysal - QGis Integration
 
 ### 1. Introduction
   1. Purpose
@@ -16,6 +16,10 @@
   The update of the spatial dynamics module will be considered successful when
   Pysal and QGis can be considered successfully integrated when the (elements specified) can be accessed and utilized within QGis with readable and meaningful results. 
   4. Definitions, terms
+  
+  MC := Markov chain
+  DMC := Discrete Markov chain
+  
   5. References
   6. Overview
   
@@ -27,8 +31,10 @@
   QGIS is a user friendly Open Source Geographic Information System (GIS) licensed under the GNU General Public License. [QGis Link](http://www.qgis.org/en/site/about/index.html)
   2. How does the project extend existing work
   
-  The project extends the functionality inherent within Pysal into the QGis platform. This allows for functions not found within QGis, but found within Pysal, to be used in Qgis' graphical interface.
+  The project extends the functionality inherent within Pysal into the QGis platform. This allows for functions not found within QGis, but found within Pysal, to be used in QGis' graphical interface.
   3. What tasks does the new system support
+  
+  The interoperability between Pysal and QGis will result in the Pysal methods being usable by QGis. This will allow QGis to apply its loaded, spatial files with accompanying data to be analyzed by the methods developed in Pysal.
   
 ### 3. System Proposal
        1. Overview
