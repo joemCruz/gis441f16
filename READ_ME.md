@@ -3,8 +3,8 @@
 
 ### 1. Introduction
   1. Purpose
-    *Pysal contains methods for Markov chains and concordance measures that it inherited from the STARS Package. These methods will be improved and new space-time indicators will be added to the spatial dynamics module of Pysal.
-    *Pysal - QGis Integration intends to allow the integration of certain portions of the Pysal library within the GIS system, QGis.
+    * Pysal contains methods for Markov chains and concordance measures that it inherited from the STARS Package. These methods will be improved and new space-time indicators will be added to the spatial dynamics module of Pysal.
+    * Pysal - QGis Integration intends to allow the integration of certain portions of the Pysal library within the GIS system, QGis.
   2. Scope of your package
   
   Users of the software Pysal.
