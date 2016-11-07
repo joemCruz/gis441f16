@@ -7,7 +7,7 @@
     * This project focuses on the addition of the Spatial Dynamics - Markov based methods library to the PySAL-QGIS integration toolkit.
   2. Scope of your package
   
-  Users of the software PySAL and/or QGIS.
+  Users of the software QGIS.
   3. Objectives and success metrics 
     * PySAL and QGIS can be considered successfully integrated when the Markov based methods can be accessed and utilized within QGIS with readable and meaningful results.
     ..* The data located within QGIS is readable and can be analyzed by PySAL methods.
