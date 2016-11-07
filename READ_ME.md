@@ -1,70 +1,66 @@
 # Requirements Analysis Document
-## Pysal - QGIS Integration
+## PySAL - QGIS Integration
 
 ### 1. Introduction
   1. Purpose
-    * Pysal contains methods for Markov chains and concordance measures that it inherited from the STARS Package. New methods concerning the testing of Spatial Markov chaining, will be created, tested, and added to Pysal.
-    * Pysal - QGIS Integration intends to allow the integration of certain portions of the Pysal library within the GIS system, QGIS.
+    * PySAL - QGIS Integration intends to allow the integration of certain portions of the PySAL library within the GIS system, QGIS.
+    * This project focuses on the addition of the Spatial Dynamics - Markov based methods library to the PySAL-QGIS integration toolkit.
   2. Scope of your package
   
-  Users of the software Pysal and/or QGIS.
+  Users of the software PySAL and/or QGIS.
   3. Objectives and success metrics 
-    * The development of Spatial Markov chaining will use the modules already in existence within the Pysal library. It will combine traditional Markov chaining with spatial weighting. This method will then be tested using two methods:
-      1. All permutations across the scope of the data would be calculated. This generates a uniform reference distribution from which a sample can be procured and be applied to a Monte Carlo test to determine the significance of the findings.
-      2. Recently developed goodness-of-fit tests for Markov chaining will be used. These test significant statistics within the transition probability matrix. Again, Monte Carlo sampling can be used to determine significance, or Markov chain Monte Carlo can be used instead.
-    * Spatial Markov chaining will be considered successful when it runs and successfully depicts the spatial relation between objects that have also utilize Markov chaining.. 
-    * Pysal and QGIS can be considered successfully integrated when the (elements specified) can be accessed and utilized within QGIS with readable and meaningful results. 
+    * PySAL and QGIS can be considered successfully integrated when the Markov based methods can be accessed and utilized within QGIS with readable and meaningful results.
+    ..* The data located within QGIS is readable and can be analyzed by PySAL methods.
+    ..* Additional data columns are added to the existing data within QGIS that will depict the result of one of the Markov based methods.
+    ..* A map is produced that accurately reflects the results calculated above.
+    * The interface that allows a QGIS user to use the Markov based methods within PySAL allows the user to use the three forms of Markov based analysis located within the library. i.e. Class Markov, Spatial Markov, and LISA Markov
   4. Definitions, terms
-  
-    * MC := Markov chain
-    * SMC := Spatial Markov chain
-  
+    
   5. References
-    * NSF Proposal
     * "Discover QGIS." Discover QGIS. QGIS, n.d. Web. 25 Oct. 2016. [QGIS](http://www.qgis.org/en/site/about/index.html)
-    * Pysal Developers. "PySAL." PySAL — Python Spatial Analysis Library. Pysal Developers, 2014. Web. 25 Oct. 2016. [Pysal](http://pysal.readthedocs.io/en/latest/index.html)
+    * PySAL Developers. "PySAL." PySAL — Python Spatial Analysis Library. PySAL Developers, 2014. Web. 25 Oct. 2016. [PySAL](http://pysal.readthedocs.io/en/latest/index.html)
   6. Overview
+  This project focuses on combining the strengths of PySAL and QGIS. Inherently, PySAL is a library of spatial analytics methods, developed in Python, of which QGIS lacks in some areas. QGIS, on the other hand, has a ready to use graphical user interface. For example, QGIS lacks the ability to analyze data using any form of Markov chaining, however, PySAL contains methods to do just that. PySAL, as of this moment, lacks the ability to display its own maps whereas QGIS can. By combining the functionality of the two, a user will be able to analyze a geospatial problem and draw a map without having to go between QGIS and PySAL or some other set of libraries as everything will be handled within the QGIS interface.
   
 ### 2. Current System
   1. Description of existing project
   
-  PySAL is an open source library of spatial analysis functions written in Python intended to support the development of high level applications. PySAL is open source under the BSD License. [Pysal Link](http://pysal.readthedocs.io/en/latest/index.html)
+  PySAL is an open source library of spatial analysis functions written in Python intended to support the development of high level applications. PySAL is open source under the BSD License. [PySAL](http://pysal.readthedocs.io/en/latest/index.html)
   
-  QGIS is a user friendly Open Source Geographic Information System (GIS) licensed under the GNU General Public License. [QGIS Link](http://www.qgis.org/en/site/about/index.html)
+  QGIS is a user friendly Open Source Geographic Information System (GIS) licensed under the GNU General Public License. [QGIS](http://www.qgis.org/en/site/about/index.html)
+  
+  PySAL
   2. How does the project extend existing work
-  Spatial methods involving MC exist within the Pysal library. These are inherited from Space-Time 
-  The project extends the functionality inherent within Pysal into the QGIS platform. This allows for functions not found within QGIS, but found within Pysal, to be used in QGIS' graphical interface.
+  The project extends the functionality inherent within PySAL into the QGIS platform. This allows for functions not found within QGIS, but found within PySAL, to be used in QGIS' graphical interface.
   3. What tasks does the new system support
-    * The new system will include the ability to use SMC
-  The interoperability between Pysal and QGIS will result in the Pysal methods being usable by QGIS. This will allow QGIS to apply its loaded, spatial files with accompanying data to be analyzed by the methods developed in Pysal.
+  The interoperability between PySAL and QGIS will result in the PySAL methods being usable by QGIS. This will allow QGIS to apply its loaded, spatial files with accompanying data to be analyzed by the methods developed in PySAL.
   
 ### 3. System Proposal
 1. Overview
-This system will provide the necessary integration between Pysal and QGIS.
+This system will provide the necessary integration between PySAL and QGIS.
 2. Functional Requirements
   1. Features to be implemented
     * All programming will be done in Python.
     * The modules will be done in Python 2.7 since QGIS does not use Python 3.
-    * SMC will be built within Pysal's spatial-dynamics library.
-    * Existing Markov chain functions and spatial weighting functions will be used to build the new module: Spatial Markov chaining.
-    * Pysal - QGIS integration is a module that will be continually modified.
-    * (Elements specified) within Pysal will be given the ability to interact with QGIS.
+    * PySAL-QGIS integration is a module that will be modifiable.
+    ..* The actual code will be well-commented.
+    * Markov based methods within PySAL's spatial dynamics library will be given the ability to interact with QGIS.
+    * A toolkit for QGIS will be developed:
+    * A drop down menu in the QGIS toolkit will list the three forms of Markov based methods (Classic Markov, Spatial Markov, and LISA Markov) will be included.
+    ..* From this drop down menu, only one method will be selectable at a time.
   2. Mock-ups (sketches) of features
 3. Nonfunctional Requirements
   1. Useability
-    Pysal-QGIS interoperability will be available only on Linux (as of October 24, 2016)
-    SMC will be available through the Pysal library and will function on Linux, Mac, and Windows.
+    PySAL-QGIS interoperability will be available only on Linux (as of October 24, 2016)
   2. Reliability
   3. Performance
   4. Supportability
   5. Implementation
     Both modules will be built utilizing Python 2.7
   6. Interface
-    Pysal-QGIS Integration will be handled with QGIS' package handling software.
-    SMC will be available via Python scripter as long as the spatial-dynamics module of pysal has been imported to the working scripter.
+    PySAL-QGIS Integration will be handled with QGIS' package handling software.
   7. Packaging
-    Pysal-QGIS Integration will be an on its own package. It will need to be manually added to QGIS for the time being.
-    SMC will be integrated with the spatial-dynamics module of Pysal.
+    PySAL-QGIS Integration will be an on its own package. It will need to be manually added to QGIS for the time being.
   8. Licensing
     BSD
            
