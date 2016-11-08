@@ -42,7 +42,7 @@
 
   
 ### 3. System Proposal
-1. Overview
+####Overview
 
 This system will provide the necessary integration between PySAL and QGIS with the addition of PySAL's Markov based methods. These methods will be usable within QGIS in the manner that QGIS will read data and PySAL will perform the Markov based analytics and return a result to the QGIS GUI.
 
