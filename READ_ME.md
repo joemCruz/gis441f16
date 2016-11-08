@@ -57,6 +57,7 @@ This system will provide the necessary integration between PySAL and QGIS with t
       * The desired field to be used in the Markov based methods will be selectable from the layer's database
       * A drop down menu in the QGIS toolkit will list the three forms of Markov based methods (Classic Markov, Spatial Markov, and LISA Markov) will be included.
         * From this drop down menu, only one method will be selectable at a time.
+        * (If individual tools is preferred then three individual tools will be constructed instead of one with a drop down menu.)
       * If the Markov based method is either Spatial Markov or LISA Markov, the contiguity will need to be specified. Rook will be considered the defualt. The spatial weights matrix based on contiguity will be calculated.
       * An output file containing the results of the Markov based method analysis can be created, otherwise, a temporary file is instead created.
       * A new output layer is displayed on the current QGIS project GUI reflecting the results of the selected Markov based method.
@@ -81,6 +82,11 @@ This system will provide the necessary integration between PySAL and QGIS with t
            
 ### 4. Project Management
 1. Schedule
-  1. Detailed milestones for project
-2. Repositories
-  1. URL for project repository
+  1. November 11: Choose proper way to show the results of the Markov based methods
+  2. November 18: Have the Classic Markov method working. This includes calculating the statistics along with producing a new layer in QGIS.
+  3. November 23: Have the Spatial and LISA Markov methods working. This includes calculating the statistics, accounting for both rook and queen contiguity, and producing a new layer in QGIS.
+  4. November 26: Complete testing. Ensure all functional requirements are fulfilled.
+  5. November 28: Begin making presentation.
+  6. December 6 : Presentation
+2. Repository
+  1. URL: [](https://github.com/joemCruz/processing_pysal/tree/test)
