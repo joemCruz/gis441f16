@@ -4,17 +4,18 @@
 ### 1. Introduction
   1. Purpose
     * PySAL - QGIS Integration intends to allow the integration of certain portions of the PySAL library within the GIS system, QGIS.
-    * This project focuses on the addition of the Spatial Dynamics - Markov based methods library to the PySAL-QGIS integration toolkit.
+    * This project focuses on the addition of the Spatial Dynamics: Markov based methods to the PySAL-QGIS integration toolkit.
   2. Scope
+    
     Users of the software QGIS.
   3. Objectives and success metrics 
     * PySAL and QGIS can be considered successfully integrated when the Markov based methods can be accessed and utilized within QGIS with readable and meaningful results.
-      * The data located within QGIS is readable and can be analyzed by PySAL methods.
+      * With successfully read data within QGIS, this data can be analyzed by PySA's Markov based methods.
       * Additional data columns are added to the existing data within QGIS that will depict the result of one of the Markov based methods.
       * A map is produced that accurately reflects the results calculated above.
     * The interface that allows a QGIS user to use the Markov based methods within PySAL allows the user to use the three forms of Markov based analysis located within the library. i.e. Class Markov, Spatial Markov, and LISA Markov
   4. Definitions, terms
-    
+    GUI := Graphical User Interface
   5. References
     * "Discover QGIS." Discover QGIS. QGIS, n.d. Web. 25 Oct. 2016. [QGIS](http://www.qgis.org/en/site/about/index.html)
     * PySAL Developers. "PySAL." PySAL — Python Spatial Analysis Library. PySAL Developers, 2014. Web. 25 Oct. 2016. [PySAL](http://pysal.readthedocs.io/en/latest/index.html)
@@ -29,38 +30,46 @@
   
   QGIS is a user friendly Open Source Geographic Information System (GIS) licensed under the GNU General Public License. [QGIS](http://www.qgis.org/en/site/about/index.html)
   
-  PySAL
+  PySAL - QGIS integration is a developing project that intends to mesh the functionalities of PySAL's analytics with QGIS' ability to display maps.
   2. How does the project extend existing work
-  The project extends the functionality inherent within PySAL into the QGIS platform. This allows for functions not found within QGIS, but found within PySAL, to be used in QGIS' graphical interface.
+  The project extends the functionality inherent within PySAL into the QGIS platform. This allows for functions not found within QGIS, but found within PySAL, to be used in QGIS' graphical interface. This further extends the work done in PySAL-QGIS integration by adding additional libraries from PySAL, in this case, the spatial dynamics Markov based methods.
   3. What tasks does the new system support
-  The interoperability between PySAL and QGIS will result in the PySAL methods being usable by QGIS. This will allow QGIS to apply its loaded, spatial files with accompanying data to be analyzed by the methods developed in PySAL.
+  The interoperability between PySAL and QGIS will result in the Markov based methods being usable by QGIS. This will allow QGIS to apply its loaded, spatial files with accompanying data to be analyzed by the Markov based methods available in PySAL.
   
 ### 3. System Proposal
 1. Overview
-This system will provide the necessary integration between PySAL and QGIS.
+This system will provide the necessary integration between PySAL and QGIS with the addition of PySAL's Markov based methods. These methods will be usable within QGIS in the manner that QGIS will read data and PySAL will perform the Markov based analytics and return a result to the QGIS GUI.
 2. Functional Requirements
   1. Features to be implemented
     * All programming will be done in Python.
     * The modules will be done in Python 2.7 since QGIS does not use Python 3.
     * PySAL-QGIS integration is a module that will be modifiable.
-    ..* The actual code will be well-commented.
+      * The actual code will be well-commented.
     * Markov based methods within PySAL's spatial dynamics library will be given the ability to interact with QGIS.
     * A toolkit for QGIS will be developed:
-    * A drop down menu in the QGIS toolkit will list the three forms of Markov based methods (Classic Markov, Spatial Markov, and LISA Markov) will be included.
-    ..* From this drop down menu, only one method will be selectable at a time.
+      * The input layer will be selectable from the current layers loaded within the QGIS project
+      * The desired field to be used in the Markov based methods will be selectable from the layer's database
+      * A drop down menu in the QGIS toolkit will list the three forms of Markov based methods (Classic Markov, Spatial Markov, and LISA Markov) will be included.
+        * From this drop down menu, only one method will be selectable at a time.
+      * If the Markov based method is either Spatial Markov or LISA Markov, the contiguity will need to be specified. Rook will be considered the defualt.
+      * An output file containing the results of the Markov based method analysis can be created, otherwise, a temporary file is instead created.
+      * A new output layer is displayed on the current QGIS project GUI.
   2. Mock-ups (sketches) of features
 3. Nonfunctional Requirements
   1. Useability
     PySAL-QGIS interoperability will be available only on Linux (as of October 24, 2016)
   2. Reliability
+    Considering the number of operations required for spatial and LISA Markov methods, issues may arise when file sizes become large.
   3. Performance
+    Considering the number of operations required for spatial and LISA Markov methods, issues may arise when file sizes become large. This entails the calculation of spatial weights matrices for all polygons within the system which requires a considerable amount of memory and may result in slowing the system.
   4. Supportability
+    The software will be readily editable and readable given a new developer understands how PySAL interfaces with QGIS.
   5. Implementation
     Both modules will be built utilizing Python 2.7
   6. Interface
-    PySAL-QGIS Integration will be handled with QGIS' package handling software.
+    PySAL-QGIS Integration will be handled with QGIS' toolkit handling software. The GUI is displayed on QGIS and is handled by the interfacing elements within PySAL-QGIS Integration.
   7. Packaging
-    PySAL-QGIS Integration will be an on its own package. It will need to be manually added to QGIS for the time being.
+    PySAL-QGIS Integration will be a stand-alone package. It will need to be manually added to QGIS for the time being.
   8. Licensing
     BSD
            
