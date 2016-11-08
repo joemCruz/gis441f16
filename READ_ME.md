@@ -10,7 +10,7 @@
     Users of the software QGIS.
   3. Objectives and success metrics 
     * PySAL and QGIS can be considered successfully integrated when the Markov based methods can be accessed and utilized within QGIS with readable and meaningful results.
-      * With successfully read data within QGIS, this data can be analyzed by PySA's Markov based methods.
+      * With successfully read data within QGIS, this data can be analyzed by PySAL's Markov based methods.
       * Additional data columns are added to the existing data within QGIS that will depict the result of one of the Markov based methods.
       * A map is produced that accurately reflects the results calculated above.
     * The interface that allows a QGIS user to use the Markov based methods within PySAL allows the user to use the three forms of Markov based analysis located within the library. i.e. Class Markov, Spatial Markov, and LISA Markov
