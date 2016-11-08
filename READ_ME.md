@@ -34,8 +34,10 @@
   
   PySAL - QGIS integration is a developing project that intends to mesh the functionalities of PySAL's analytics with QGIS' ability to display maps. "We are currently writing scripts which add PySAL functionality to (QGIS) Processing." [QGIS-PySAL Integration](https://github.com/anitagraser/QGIS-Processing-tools/wiki/PySAL-Integration)
   2. How does the project extend existing work
+  
   The project extends the functionality inherent within PySAL into the QGIS platform. This allows for functions not found within QGIS, but found within PySAL, to be used in QGIS' graphical interface. This further extends the work done in PySAL-QGIS integration by adding additional libraries from PySAL, in this case, the spatial dynamics Markov based methods.
   3. What tasks does the new system support
+  
   The interoperability between PySAL and QGIS will result in the Markov based methods being usable by QGIS. This will allow QGIS to apply its loaded, spatial files with accompanying data to be analyzed by the Markov based methods available in PySAL.
   
 ### 3. System Proposal
