@@ -15,6 +15,7 @@
       * A map is produced that accurately reflects the results calculated above.
     * The interface that allows a QGIS user to use the Markov based methods within PySAL allows the user to use the three forms of Markov based analysis located within the library. i.e. Classic Markov, Spatial Markov, and LISA Markov
   4. Definitions, terms
+  
     GUI := Graphical User Interface
   5. References
     * "Discover QGIS." Discover QGIS. QGIS, n.d. Web. 25 Oct. 2016. [QGIS](http://www.qgis.org/en/site/about/index.html)
