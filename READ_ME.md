@@ -1,5 +1,6 @@
-# Requirements Analysis Document                                                                                          Joseph Cruz
+# Requirements Analysis Document
 ## PySAL-QGIS Integration
+## Joseph Cruz
 
 ### 1. Introduction
   1. Purpose
