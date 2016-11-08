@@ -1,9 +1,9 @@
 # Requirements Analysis Document
-## PySAL - QGIS Integration
+## PySAL-QGIS Integration
 
 ### 1. Introduction
   1. Purpose
-    * PySAL - QGIS Integration intends to allow the integration of certain portions of the PySAL library within the GIS system, QGIS.
+    * PySAL-QGIS Integration intends to allow the integration of certain portions of the PySAL library within the GIS system, QGIS.
     * This project focuses on the addition of the Spatial Dynamics: Markov based methods to the PySAL-QGIS integration toolkit.
   2. Scope
     
@@ -21,7 +21,7 @@
     * PySAL Developers. "PySAL." PySAL — Python Spatial Analysis Library. PySAL Developers, 2014. Web. 25 Oct. 2016. [PySAL](http://pysal.readthedocs.io/en/latest/index.html)
   6. Overview
   
-  This project focuses on combining the strengths of PySAL and QGIS. Inherently, PySAL is a library of spatial analytics methods, developed in Python, of which QGIS lacks in some areas. QGIS, on the other hand, has a ready to use graphical user interface. For example, QGIS lacks the ability to analyze data using any form of Markov chaining, however, PySAL contains methods to do just that. PySAL, as of this moment, lacks the ability to display its own maps whereas QGIS can. By combining the functionality of the two, a user will be able to analyze a geospatial problem and draw a map without having to go between QGIS and PySAL or some other set of libraries as everything will be handled within the QGIS interface.
+  This project focuses on combining the strengths of PySAL and QGIS using the PySAL-QGIS Integration library. Inherently, PySAL is a library of spatial analytics methods, developed in Python, of which QGIS lacks in some areas. QGIS, on the other hand, has a ready to use graphical user interface. For example, QGIS lacks the ability to analyze data using any form of Markov chaining, however, PySAL contains methods to do just that. PySAL, as of this moment, lacks the ability to display its own maps whereas QGIS can. By combining the functionality of the two, a user will be able to analyze a geospatial problem and draw a map without having to go between QGIS and PySAL or some other set of libraries as everything will be handled within the QGIS interface.
   
 ### 2. Current System
   1. Description of existing project
