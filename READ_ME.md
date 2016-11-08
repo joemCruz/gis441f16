@@ -79,7 +79,7 @@ This system will provide the necessary integration between PySAL and QGIS with t
     PySAL-QGIS Integration will be a stand-alone package. It will need to be manually added to QGIS for the time being.
   8. Licensing:
     BSD
-           
+            
 ### 4. Project Management
 1. Schedule
   1. November 11: Choose proper way to show the results of the Markov based methods
