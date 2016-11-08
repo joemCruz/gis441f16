@@ -20,6 +20,7 @@
   5. References
     * "Discover QGIS." Discover QGIS. QGIS, n.d. Web. 25 Oct. 2016. [QGIS](http://www.qgis.org/en/site/about/index.html)
     * PySAL Developers. "PySAL." PySAL — Python Spatial Analysis Library. PySAL Developers, 2014. Web. 25 Oct. 2016. [PySAL](http://pysal.readthedocs.io/en/latest/index.html)
+    * Graser, Anita. "Anitagraser/QGIS-Processing-tools." GitHub. GitHub, 23 Apr. 2015. Web. 07 Nov. 2016. [PySAL-QGIS Integration](https://github.com/anitagraser/QGIS-Processing-tools/wiki/PySAL-Integration)
   6. Overview
   
   This project focuses on combining the strengths of PySAL and QGIS using the PySAL-QGIS Integration library. Inherently, PySAL is a library of spatial analytics methods, developed in Python, of which QGIS lacks in some areas. QGIS, on the other hand, has a ready to use graphical user interface. For example, QGIS lacks the ability to analyze data using any form of Markov chaining, however, PySAL contains methods to do just that. PySAL, as of this moment, lacks the ability to display its own maps whereas QGIS can. By combining the functionality of the two, a user will be able to analyze a geospatial problem and draw a map without having to use QGIS and PySAL or some other set of libraries separately, as PySAL analysis will be handled within the QGIS environment.
@@ -31,7 +32,7 @@
   
   QGIS is a user friendly Open Source Geographic Information System (GIS) licensed under the GNU General Public License. [QGIS](http://www.qgis.org/en/site/about/index.html)
   
-  PySAL - QGIS integration is a developing project that intends to mesh the functionalities of PySAL's analytics with QGIS' ability to display maps.
+  PySAL - QGIS integration is a developing project that intends to mesh the functionalities of PySAL's analytics with QGIS' ability to display maps. "We are currently writing scripts which add PySAL functionality to (QGIS) Processing." [QGIS-PySAL Integration](https://github.com/anitagraser/QGIS-Processing-tools/wiki/PySAL-Integration)
   2. How does the project extend existing work
   The project extends the functionality inherent within PySAL into the QGIS platform. This allows for functions not found within QGIS, but found within PySAL, to be used in QGIS' graphical interface. This further extends the work done in PySAL-QGIS integration by adding additional libraries from PySAL, in this case, the spatial dynamics Markov based methods.
   3. What tasks does the new system support
